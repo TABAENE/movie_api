@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dnu851rf&*uk4_+p$owrlf-edr8rywv_o5$u*jty#y3=)3smve'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -103,8 +103,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "movie/static")
+STATIC_URL = '/assets/'
+STATIC_ROOT = os.path.join(BASE_DIR, "movie/assets")
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = (
@@ -122,6 +122,11 @@ REST_FRAMEWORK = {
     )
 }
 
-STATICFILES_DIRS = (
-    #os.path.join(BASE_DIR, "movie"),
-)
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, "movie/assets/js"),
+#)
+
+ALLOWED_HOSTS = [
+    'mysterious-mesa-2167.herokuapp.com', 
+    '127.0.0.1', 'localhost'
+]
