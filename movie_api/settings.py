@@ -59,7 +59,7 @@ ROOT_URLCONF = 'movie_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/thaque/movie_api/movie/static/templates"],
+        'DIRS': [os.path.join(BASE_DIR, "movie/static/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
