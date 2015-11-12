@@ -1,0 +1,14 @@
+<a href="#/movie/new" class="btn-primary btn-lg nodecoration">Add New Movie</a>
+<table class="table movietable">
+    <tr>
+        <td><h3>All Movies</h3></td><label>Search: <input ng-model="searchText"></label>
+        <td></td>
+    </tr>
+    <tr ng-repeat="movie in movies | filter:searchText">
+        <td>{{movie.name}}</td>
+        <td>
+            <a class="btn btn-primary" ng-href="#/movie/{{movie.id}}/view">View</a>
+            <a class="btn btn-danger"  ng-click="deleteMovie(movie)">Delete</a>
+        </td>
+    </tr>
+</table>
