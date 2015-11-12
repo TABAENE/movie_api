@@ -104,6 +104,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = (
@@ -122,6 +123,5 @@ REST_FRAMEWORK = {
 }
 
 STATICFILES_DIRS = (
-    #"/home/thaque/movie_api/movie/static",
-    #os.path.join(BASE_DIR, "movie/static"),
+    os.path.join(BASE_DIR, "movie"),
 )
