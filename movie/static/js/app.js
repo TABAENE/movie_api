@@ -19,6 +19,7 @@
 		$httpProvider.defaults.xsrfCookieName = 'csrftoken';
 		$httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json';
+		$httpProvider.defaults.headers.put['Content-Type'] = 'application/json';
 	}
     ]);
     

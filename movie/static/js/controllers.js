@@ -17,7 +17,6 @@ movieControllers.controller('movieListController', ['$scope', '$routeParams', '$
 
     $scope.movie=new Movie();
     $scope.addMovie=function(){
-		console.log($scope.movie);
         $scope.movie.$save(function(){
             $location.url('/movies');
         });
