@@ -109,7 +109,7 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-	os.path.join(PROJECT_DIR, 'static'),
+	os.path.join(PROJECT_DIR, 'movie/static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
