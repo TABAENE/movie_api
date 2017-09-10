@@ -1,6 +1,6 @@
   // create the module and name it movieApp
     var movieApp = angular.module('movieApp', ['ngRoute', 'ngResource', 'movieControllers', 'movieApp.services']);
-    
+
     movieApp.config(['$routeProvider', '$locationProvider', '$resourceProvider',
 		function($routeProvider, $locationProvider, $resourceProvider){
 		//$locationProvider.html5Mode({enabled: true, requireBase: false});
